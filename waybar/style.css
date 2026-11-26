@@ -1,0 +1,55 @@
+window#waybar {
+	background-color: transparent;
+	color: white;
+}
+
+#window,
+#pulseaudio,
+#tray,
+#clock,
+#network,
+#battery{
+	background-color: rgba(80, 80, 80, 0.5);
+	padding: 0px 10px;
+	margin: 0px 4px;
+
+	border-radius: 0px 0px 8px 8px;
+}
+
+#workspaces button {
+	padding: 0px 2px;
+	margin: 4px 4px;
+	color: rgba(60, 60, 60, 1.0);
+	background: transparent;
+	border: none;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+	background-color: transparent;
+	color: white;
+}
+
+window#waybar.empty #window {
+	background: transparent;
+	padding: 0;
+	margin: 0;
+	border: none;
+	min-width: 0;
+}
+
+#workspaces {
+	border-radius: 0px 0px 8px 0px;
+	margin: 0px 0px;
+	padding: 0px 10px;
+
+	background: rgba(80, 80, 80, 0.5);
+}
+
+#custom-power {
+	border-radius: 0px 0px 0px 8px;
+	margin: 0px 0px;
+	padding: 0px 11px;
+
+	background: rgba(80, 80, 80, 0.5);
+}

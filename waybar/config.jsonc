@@ -1,0 +1,117 @@
+{
+	"position":"top",
+	"height": 32,
+
+	"modules-left": [
+		"sway/workspaces",
+		"hyprland/workspaces",
+	],
+	
+	"modules-center": [
+		"sway/window",
+	],
+
+	"modules-right": [
+		"tray",
+		"network",
+		"pulseaudio",
+		"battery",
+		"clock",
+		"custom/power"
+	],
+
+	"battery": {
+		"format": "{icon}    {capacity}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			"",
+		],
+
+    		"format-charging": "   {capacity}%"
+	},
+
+	"network": {
+		"format-wifi": "{icon}   {essid}",
+		"format-disconnected": "󰤭   Not Connected",
+		"on-click": "~/.config/waybar/scripts/network.sh",
+
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		],
+
+		"tooltip": false,
+	},
+
+	"sway/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"focused": "󱨇",
+			"default": "",
+		},
+
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+		},
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "󱨇",
+			"default": "",
+		},
+
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+		},
+	},
+	
+
+
+
+	"pulseaudio": {
+		"format": "{icon}   {volume}%",
+		"format-icons": [
+			"",
+			"",
+			"",
+		],
+
+		"format-muted": " ",
+		"on-click": "~/.config/waybar/scripts/audio.sh"
+	},
+
+	"tray": {
+		"icon-size" : 16,
+		"spacing" : 8,
+
+	},
+
+	"hyprland/window": {
+		"max-length": 50,
+	},
+	
+	"clock": {
+		"interval": 20,
+		"tooltip": true,
+		"format": "{:%H:%M}",
+		"tooltip-format": "{:%Y-%m-%d}",
+	},
+
+	"custom/power": {
+		"format": "⏻",
+		"on-click": "~/.config/waybar/scripts/power.sh",
+		"tooltip": false,
+	}
+}
