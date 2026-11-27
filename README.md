@@ -7,6 +7,7 @@
 - yazi
 - grim
 - slurp
+- NerdFonts (for icons)
 
 ### Changes to this repo are infrequent, because I usually back up if something goes wrong with my device
 
