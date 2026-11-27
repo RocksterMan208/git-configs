@@ -19,9 +19,12 @@ Move terminal into the directory
 ```
 cd git-configs
 ```
-Remove the .git file
+Remove the .git file and ReadMe
 ```
 rm -rf .git
+```
+```
+rm README.md
 ```
 Now move it into your .config file
 ```
